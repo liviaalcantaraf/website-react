@@ -2,30 +2,48 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Intro from "./components/Intro";
+import Feature from "./components/Feature";
+import { css } from "styled-components";
 
 const Container = styled.div`
   height: 100vh;
   overflow: hidden;
+  position: relative;
 `;
-
-const IntoShape = styled.div`
+const Shape = css`
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  clip-path: polygon(100% 0%, 72% 0%, 53% 100%, 55% 100%, 99% 100%);
+`;
+
+const IntoShape = styled.div`
+  ${Shape}
+  clip-path: polygon(67% 0, 100% 0%, 100% 100%, 55% 100%);
   background-color: crimson;
+`;
+
+const FeatureShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 55% 0%, 33% 100%, 0% 100%);
+  background-color: pink;
 `;
 
 function App() {
   return (
-    <Container>
-      <Navbar />
-      <Intro />
-      <IntoShape />
-    </Container>
+    <div>
+      <Container>
+        <Navbar />
+        <Intro />
+        <IntoShape />
+      </Container>
+      <Container>
+        <Feature />
+        <FeatureShape />
+      </Container>
+    </div>
   );
 }
 
