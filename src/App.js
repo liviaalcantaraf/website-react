@@ -5,6 +5,9 @@ import Intro from "./components/Intro";
 import Feature from "./components/Feature";
 import { css } from "styled-components";
 import Service from "./components/Service";
+import Price from "./components/Price";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Container = styled.div`
   height: 100vh;
@@ -37,6 +40,12 @@ const ServiceShape = styled.div`
   background-color: pink;
 `;
 
+const PriceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(33% 0, 100% 0%, 100% 100%, 67% 100%);
+  background-color: crimson;
+`;
+
 function App() {
   return (
     <div>
@@ -52,6 +61,14 @@ function App() {
       <Container>
         <Service />
         <ServiceShape />
+      </Container>
+      <Container>
+        <Price />
+        <PriceShape />
+      </Container>
+      <Container>
+        <Contact />
+        <Footer />
       </Container>
     </div>
   );
