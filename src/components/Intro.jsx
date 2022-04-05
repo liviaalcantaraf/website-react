@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import woman from "../image/woman.svg";
+import React from "react";
 
 const Container = styled.div`
   height: calc(100vh - 50px);

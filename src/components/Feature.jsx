@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import App from "../image/app.svg";
+import React from "react";
 
 const Container = styled.div`
   display: flex;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Search from "../image/search.png";
+import React from "react";
 
 const Container = styled.div`
   width: 100px;
