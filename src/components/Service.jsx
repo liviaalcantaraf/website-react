@@ -109,7 +109,6 @@ const Service = () => {
             <Icon src={Play} />
             How we work
           </Button>
-          <Image open={open} src={Tablet} />
         </Wrapper>
       </Right>
       ;
