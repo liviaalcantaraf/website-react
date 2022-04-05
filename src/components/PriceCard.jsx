@@ -23,8 +23,9 @@ const Type = styled.button`
   padding: 10px;
   margin: 10px 0;
   border: 1.5px solid crimson;
-  color: crimson;
+  color: #377850;
   background-color: white;
+  border-color: #88ae95;
   border-radius: 20px;
 `;
 const List = styled.ul`
@@ -35,7 +36,7 @@ const ListItem = styled.li`
 `;
 const Button = styled.button`
   border: none;
-  background-color: darkblue;
+  background-color: #377850;
   color: white;
   font-size: 16px;
   padding: 15px;
@@ -48,7 +49,7 @@ const PriceCard = ({ price, type }) => {
   return (
     <Container>
       <PriceContainer>
-        $<Price>{price}</Price>/month
+        €<Price>{price}</Price>/month
       </PriceContainer>
       <Type>{type} Plan</Type>
       <List>

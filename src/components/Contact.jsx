@@ -8,6 +8,7 @@ import Send from "../image/send.png";
 
 const Container = styled.div`
   height: 90%;
+  background-color: #377850;
 `;
 const Wrapper = styled.div`
   height: 100%;
@@ -29,7 +30,9 @@ const FormContainer = styled.div`
 
 const Title = styled.h1`
   margin: 50px;
+  margin-left: 115px;
   margin-top: 0;
+  color: #d7e4db;
   @media only screen and (max-width: 480px) {
     margin: 20px;
   }
@@ -88,7 +91,7 @@ const TextArea = styled.textarea`
 const Button = styled.button`
   border: none;
   padding: 15px;
-  background-color: darkblue;
+  background-color: #88ae95;
   color: white;
   font-size: 20px;
   border-radius: 10px;
@@ -105,6 +108,7 @@ const AddressContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #d7e4db;
   @media only screen and (max-width: 480px) {
     width: 100%;
     margin-top: 20px;
@@ -155,18 +159,13 @@ const Contact = () => {
         </FormContainer>
         <AddressContainer>
           <AddressItem>
-            <Icon src={Map} />
-            <Text>123 Park Avenue St., New York, USA</Text>
+            <Text>📍 Your Address, 5. Lisbon, Portugal</Text>
           </AddressItem>
           <AddressItem>
-            <Icon src={Phone} />
-            <Text>+1 631 1234 5678</Text>
-            <Text>+1 326 1234 5678</Text>
+            <Text>📞 +351 999 555 222</Text>
           </AddressItem>
           <AddressItem>
-            <Icon src={Send} />
-            <Text>contact@gmail.com</Text>
-            <Text>sales@gmail.com</Text>
+            <Text>📧 contact@yourbrand.com</Text>
           </AddressItem>
         </AddressContainer>
       </Wrapper>

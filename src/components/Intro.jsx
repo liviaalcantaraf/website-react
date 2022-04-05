@@ -1,7 +1,6 @@
 import React from "react";
-
 import styled from "styled-components";
-import woman from "../image/woman.png";
+import woman from "../image/woman.svg";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -20,12 +19,14 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 60px;
   width: 60%;
+  color: #191919;
 `;
 
 const Desc = styled.p`
   width: 60%;
   font-size: 20px;
   margin-top: 20px;
+  color: #191919;
 `;
 
 const Info = styled.div`
@@ -37,7 +38,7 @@ const Info = styled.div`
 `;
 const Button = styled.button`
   padding: 15px;
-  background-color: #19456b;
+  background-color: #377850;
   color: white;
   border-radius: 10px;
   font-weight: bold;
@@ -50,10 +51,7 @@ const Contact = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Phone = styled.span`
-  color: #f0667d;
-  font-weight: bold;
-`;
+
 const ContactText = styled.span`
   color: gray;
   margin-top: 5px;
@@ -64,13 +62,16 @@ const Right = styled.div`
 `;
 const Image = styled.img`
   width: 100%;
+  position: relative;
+  display: flex;
+  top: 50px;
 `;
 
 const Intro = () => {
   return (
     <Container>
       <Left>
-        <Title> Your business with more creativity</Title>
+        <Title> Your business with more results</Title>
         <Desc>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
           atque, et fuga unde, consequatur obcaecati dicta non quia repellat
@@ -78,10 +79,6 @@ const Intro = () => {
         </Desc>
         <Info>
           <Button>START A PROJECT</Button>
-          <Contact>
-            <Phone>Call us +351 999 999 999</Phone>
-            <ContactText>For any question</ContactText>
-          </Contact>
         </Info>
       </Left>
       <Right>

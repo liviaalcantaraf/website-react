@@ -26,24 +26,24 @@ const Shape = css`
 const IntoShape = styled.div`
   ${Shape}
   clip-path: polygon(67% 0, 100% 0%, 100% 100%, 55% 100%);
-  background-color: crimson;
+  background-color: #377850;
 `;
 
 const FeatureShape = styled.div`
   ${Shape}
   clip-path: polygon(0 0, 55% 0%, 33% 100%, 0% 100%);
-  background-color: pink;
+  background-color: #377850;
 `;
 const ServiceShape = styled.div`
   ${Shape}
   clip-path: polygon(0 0, 33% 0%, 33% 100%, 0% 100%);
-  background-color: pink;
+  background-color: #377850;
 `;
 
 const PriceShape = styled.div`
   ${Shape}
   clip-path: polygon(33% 0, 100% 0%, 100% 100%, 67% 100%);
-  background-color: crimson;
+  background-color: #377850;
 `;
 
 function App() {

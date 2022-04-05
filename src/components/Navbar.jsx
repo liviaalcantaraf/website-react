@@ -21,7 +21,8 @@ const Left = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  text-decoration: underline crimson;
+  color: #191919;
+  text-decoration: underline #88ae95;
 `;
 
 const Menu = styled.ul`
@@ -32,13 +33,14 @@ const MenuItem = styled.li`
   margin-right: 30px;
   font-size: 18px;
   font-weight: bold;
-  color: gray;
+  color: #88ae95;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
   border: 2px solid white;
   padding: 10px 15px;
-  background-color: crimson;
+  background-color: #377850;
   color: white;
   font-weight: bold;
   border-radius: 10px;

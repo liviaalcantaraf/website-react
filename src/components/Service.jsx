@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Tablet from "../image/tablet.png";
+import Tablet from "../image/tablet.svg";
 import MiniCard from "./MiniCard";
 import Play from "../image/play.png";
 
@@ -15,9 +15,11 @@ const Left = styled.div`
 
 const Image = styled.img`
   display: ${(props) => props.open && "none"};
+  height: 60%;
 
-  height: 100%;
-  margin-right: 100px;
+  position: relative;
+  top: 100px;
+  margin-left: 50px;
 `;
 
 const Video = styled.video`
@@ -40,11 +42,13 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  color: #191919;
+`;
 const Desc = styled.p`
   font-size: 20px;
   margin-top: 20px;
-  color: #555;
+  color: #191919;
 `;
 
 const CardContainer = styled.div`
@@ -57,9 +61,9 @@ const Button = styled.button`
   width: 180px;
   border: none;
   border-radius: 10px;
-  background-color: darkblue;
+  background-color: #377850;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px;
   margin-top: 50px;
   cursor: pointer;
@@ -84,10 +88,9 @@ const Service = () => {
           autoPlay
           loop
           controls
-          src="https://storage.coverr.co/videos/I4i8cIRplOXl1bqlAbcEfkZcjzg3CG401?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjQ5MDcxNDUxfQ.X1C4hCuC17q8BtOt__aG3T8MxfdBGzBTc4fAofGBujM"
+          src="https://storage.coverr.co/videos/ANCqim8Tws01XeRMzOFXzDnLSAtCC01VVF?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjQ5MTY2Njk0fQ.KBs5Pu2KlxYHqXYnQhgH47ZqclBEjtgVwDltLyO9nlM"
         />
       </Left>
-      ;
       <Right>
         <Wrapper>
           <Title>Simple Process to start</Title>
@@ -104,8 +107,9 @@ const Service = () => {
           </CardContainer>
           <Button onClick={() => setOpen(true)}>
             <Icon src={Play} />
-            How it works
+            How we work
           </Button>
+          <Image open={open} src={Tablet} />
         </Wrapper>
       </Right>
       ;

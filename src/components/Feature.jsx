@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import App from "../image/app.png";
+import App from "../image/app.svg";
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +10,10 @@ const Left = styled.div`
   width: 50%;
 `;
 const Image = styled.img`
-  width: 60%;
+  width: 70%;
+  display: flex;
+  position: relative;
+  top: 80px;
 `;
 
 const Right = styled.div`
@@ -22,6 +25,7 @@ const Right = styled.div`
 
 const Title = styled.span`
   font-size: 70px;
+  color: #191919;
 `;
 const SubTitle = styled.span`
   font-size: 24px;
@@ -34,17 +38,6 @@ const Desc = styled.p`
   color: #777;
   margin-top: 30px;
 `;
-const Button = styled.button`
-  width: 150px;
-  border: none;
-  padding: 15px 20px;
-  background-color: #19456b;
-  color: white;
-  border-radius: 10px;
-  font-size: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-`;
 
 const Feature = () => {
   return (
@@ -54,10 +47,10 @@ const Feature = () => {
       </Left>
       <Right>
         <Title>
-          <b>good</b> design <br />
-          <b>good</b> business
+          <b>More</b> creativity <br />
+          <b>Better</b> results
         </Title>
-        <SubTitle>We know good design means goood business</SubTitle>
+        <SubTitle>Your subtitle about your brand</SubTitle>
         <Desc>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           modi, sunt architecto aspernatur asperiores reiciendis, totam deserunt
@@ -68,7 +61,6 @@ const Feature = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           modi.
         </Desc>
-        <Button>Learn More</Button>
       </Right>
     </Container>
   );

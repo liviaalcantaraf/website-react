@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 10%;
-  background-color: #111;
-  color: white;
+  background-color: #88ae95;
+  color: #191919;
 `;
 const Wrapper = styled.div`
   padding: 20px;
@@ -28,8 +28,14 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <List>
-          <ListItem>LinkedIn</ListItem>
-          <ListItem>Code</ListItem>
+          <ListItem>
+            <a href="https://www.linkedin.com/in/liviaalcantaraf/">LinkedIn</a>
+          </ListItem>
+          <ListItem>
+            <a href="https://github.com/liviaalcantaraf/website-react">
+              Open Code
+            </a>
+          </ListItem>
         </List>
         <Copyright>Lívia A.</Copyright>
       </Wrapper>

@@ -18,6 +18,7 @@ const Image = styled.img`
 const Text = styled.span`
   margin-top: 10px;
   text-align: center;
+  color: #191919;
 `;
 
 const MiniCard = () => {
