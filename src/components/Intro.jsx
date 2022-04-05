@@ -47,16 +47,6 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Contact = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ContactText = styled.span`
-  color: gray;
-  margin-top: 5px;
-`;
-
 const Right = styled.div`
   width: 40%;
 `;
