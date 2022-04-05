@@ -1,10 +1,4 @@
-import React from "react";
-
 import styled from "styled-components";
-
-import Map from "../image/map.png";
-import Phone from "../image/phone.png";
-import Send from "../image/send.png";
 
 const Container = styled.div`
   height: 90%;
