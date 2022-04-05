@@ -118,14 +118,6 @@ const AddressItem = styled.div`
   }
 `;
 
-const Icon = styled.img`
-  width: 20px;
-  margin-right: 20px;
-  @media only screen and (max-width: 480px) {
-    width: 15px;
-  }
-`;
-
 const Text = styled.span`
   font-size: 20px;
   margin-right: 15px;
